@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Sklep - koszyk</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="the-shop-main">
+        <div class="the-shop">
+          <i class="bi bi-shop"></i>
+          <b>THE SHOP</b>
+        </div>
+        <div class="shop" id="shop">
+          <!-- <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food/ramen.jpg"
+                class="food-photo"
+                alt="Japanese food - Ramen"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Ramen</h1>
+                <h2><i>Akasaka</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >łagodna zupa z kurczakiem, pierożkami, warzywami i jajkiem</span
+            >
+            <div class="products-all">
+              <div class="product-amount">102.99$</div>
+              <div class="buttons">
+                <div class="plus-minus-number">12</div>
+                <div class="plus-minus-buttons">
+                  <i class="bi bi-plus"></i>
+                  <i class="bi bi-dash"></i>
+                </div>
+              </div>
+              <div class="the-cart-plus-icon">
+                <i class="bi bi-cart-plus-fill"></i>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\sandwiches.jpg"
+                class="food-photo"
+                alt="Subway sandwich"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Kurczak BBQ</h1>
+                <h2><i>Subway</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >stripsy z kurczaka połączone z sosem BBQ</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img src="food\gyoza.jpg" class="food-photo" alt="Gyoza" />
+              <div class="product-name-manufacturer">
+                <h1>Pierożki Gyoza</h1>
+                <h2><i>KOKU Sushi</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >gotowane na parze pierożki dim sum z tempeh i warzywami</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\spaghetti-bolognese.jpg"
+                class="food-photo"
+                alt="Spaghetti bolognese"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Spaghetti bolognese</h1>
+                <h2><i>Italiano</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >sos pomidorowo-warzywny z duszoną mieloną wołowiną z dodatkiem
+              wieprzowiny</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\sushi.jpg"
+                class="food-photo"
+                alt="Japanese food - Sushi"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Sushi</h1>
+                <h2><i>Akasaka</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >3 szt nigiri maślana, 3 szt nigiri tuńczyk, 3 szt nigiri łosoś, 6
+              szt maki, 5 szt california łosoś</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\tomato-soup.jpg"
+                class="food-photo"
+                alt="Tomato soup"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Gazpacho</h1>
+                <h2><i>La Ibérica</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >pomidory, ogórek, cebula, papryka, oliwa, czosnek, ocet
+              balsamiczny</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\apple-pie.jpg"
+                class="food-photo"
+                alt="Apple pie"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Szarlotka</h1>
+                <h2><i>Pan Kejk</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >szarlotka na ciepło z lodami waniliowymi
+            </span>
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\pizza-grecka.jpg"
+                class="food-photo"
+                alt="Pizza grecka"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Pizza Grecka</h1>
+                <h2><i>Pizza Hut</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >sos biały, ser mozzarella, oliwki czarne, ser
+              śródziemnomorski</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\veggie-burger.jpg"
+                class="food-photo"
+                alt="Veggie burger"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Wege burger</h1>
+                <h2><i>Gastro Machina</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >150g wege kotleta na bazie kaszy jaglanej z warzywami i ziarnami
+              sezamu oraz słonecznika, warzywa, sos do wyboru</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\potato-sticks.jpg"
+                class="food-photo"
+                alt="French fries"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Frytki</h1>
+                <h2><i>Gastro Machina</i></h2>
+              </div>
+            </div>
+            <span class="description">porcja 170g frytek z ziemniaków</span>
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img src="food\burritos.jpg" class="food-photo" alt="Burrito" />
+              <div class="product-name-manufacturer">
+                <h1>Burrito</h1>
+                <h2><i>Sombrero</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >z kurczakiem, pastą z fasoli, salsą z jalapeño i sałatą,
+              zawinięte w pszenną tortillę</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="foodphoto">
+              <img
+                src="food\frappuccino.jpg"
+                class="food-photo"
+                alt="Frappuccino"
+              />
+              <div class="product-name-manufacturer">
+                <h1>Caramel Frappuccino</h1>
+                <h2><i>Starbucks</i></h2>
+              </div>
+            </div>
+            <span class="description"
+              >syrop o smaku karmelowym, połączony z kawą i mlekiem, całość
+              zblendowana z lodem</span
+            >
+            <div class="products-all">
+              <div class="products-all-cart">102.99$</div>
+              <div class="products-all-cart">
+                <button class="plus-minus">+</button>
+                <div class="plus-minus-number">12</div>
+                <button class="plus-minus">–</button>
+              </div>
+              <div class="products-all-cart">
+                <img
+                  src="icons\the-cart-plus2.jpg"
+                  class="the-cart-plus-icon"
+                />
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </main>
+      <aside class="the-cart-main">
+        <div class="the-cart-title">
+          <i class="bi bi-cart-fill"></i><b>THE CART</b>
+        </div>
+        <div>przewijana sekcja</div>
+        <div>Grand total:</div>
+      </aside>
+    </div>
+    <script src="products.js"></script>
+  </body>
+</html>
